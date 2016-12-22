@@ -1,0 +1,2479 @@
+/* TODO: remove all display: flex and replace by table and table-row, etc. */
+
+@font-face {
+    font-family: 'SimplonBP-Light';
+    src : url("./fonts/Simplon BP/OTF/SimplonBP-Light.otf");
+}
+
+@font-face {
+    font-family: 'SimplonBP-Regular';
+    src : url("./fonts/Simplon BP/OTF/SimplonBP-Regular.otf")
+}
+
+@font-face {
+    font-family: 'SimplonOi-Headline';
+    src : url("./fonts/Simplon Oi Headline/OTF/SimplonOi-Headline.otf")
+}
+
+body, html {
+    height: 100%;
+    font-family: 'SimplonBP-Regular' !important;
+    font-weight: 100 !important;
+}
+
+/* NOTE: Test for animation in cpf/home */
+.content-home {
+    top: 0px;
+    z-index: 1000 !important;
+}
+
+.logo-container{
+    max-width: 15vw;
+}
+
+.row{
+    background-image: linear-gradient(-180deg, #EA288C 0%, #FF6D00 70%);
+    background-image: linear-gradient(to bottom, #EB2D82, #EF3A67 50%, #F4484C 100%) !important;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'SimplonBP-Regular' !important;
+    font-weight: 100 !important;
+}
+
+.row{
+    /* background-color: #f5f5f5; */
+    
+}
+
+.background-white{
+    position: absolute;
+    left: 20vw;
+    width: 80vw;
+    height: 100vh;
+    background-color: white;
+    z-index : 0;
+}
+
+
+
+
+.ui-input-btn > input,
+.ui-input-btn > div
+{
+    visibility: visible;
+}
+
+/* hidden the mobile plain text button */
+.ui-input-btn{
+    visibility: hidden;
+}
+
+/*.side-bar-after-effect{
+    max-width: 15vh !important;
+}*/
+
+/* END Test */
+
+
+.container-fluid{
+    position: fixed !important;
+    margin: 0vh !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.sidebar {
+  height: 100vh;
+  background-image: linear-gradient(-180deg, #EA288C 0%, #FF6D00 70%);
+  background-image: linear-gradient(to bottom, #EB2D82, #EF3A67 50%, #F4484C 100%) !important;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.img-mask{
+    margin-left: 36px;
+    margin-top: 70px;
+    max-height: 62.5px;
+    min-height: 62.5px;
+}
+
+/* text on side bar */
+.sidebar_text {
+  margin-left: 36px;
+  width: 266px;
+  height: 126px;
+  font-family: 'SimplonOi-Headline';
+  font-size: 70px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.9;
+  letter-spacing: -4px;
+  color: #ffffff;
+}
+
+.item-row{
+    position: relative;
+    height: 33.33vh !important;
+    margin-left: 0px !important;
+    border-top: solid 1px #dddddd;
+    background-color: white !important;
+}
+
+.item-last{
+  background-color: #f5f5f5 !important;
+  border-width: 0px;
+}
+
+.click_button > .vertical-align-items,
+.click_button > .vertical-align-items > .item-last{
+    cursor: pointer !important;
+}
+
+/* items on cpf page */
+.item-row-cpf{
+    height: 50vh !important;
+    margin-left: 0px !important;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* remove the border */
+input {
+  border-width:0px !important;
+  border:none !important;
+}
+
+
+/* below customize checkbox */
+.checkbox-container{
+    vertical-align: middle;
+}
+
+/* align label to checkbox */
+label {
+  display: block;
+  padding-left: 15px;
+  line-height: 19px;
+  text-indent: 15px;
+  margin-right: 70px !important;
+}
+
+/* change the input text style */
+input[type="text"],
+input[type="password"]{
+    font-family: 'SimplonBP-Light';
+    font-size: 42px;
+      font-weight: 100;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 5.36;
+      letter-spacing: -0.3px;
+      color: #777777;
+      height: 50px;
+}
+
+input[type="checkbox"].without-eye{
+    opacity: 0;
+}
+
+input[type="checkbox"] + label
+{
+    background-color: #fff;
+    border: 0.08rem solid #999999;
+    width: 21px  !important;
+    height: 21px;
+    float: right;
+    display: block;
+    margin-right: 70px !important;
+    background: none;
+}
+
+input[type="checkbox"]:checked + label {
+    content: ' ';
+    width: 21px;
+    height: 21px;
+    background: url(../svg/checkbox_on.svg);
+    background-repeat: no-repeat;
+    border: none;
+    *overflow: hidden;
+    color : #C72177;
+}
+
+
+input[type="checkbox"]:hover + label{
+    border: 0.08rem solid #C72177;
+    display: block;
+}
+
+input[type="checkbox"]:checked:hover + label{
+    border: none;
+}
+
+
+
+
+/* remove outline border */
+input:focus {
+    outline-width: 0;
+}
+
+/* the above email input text */
+.email-name{
+  position: absolute !important;
+  margin-top: auto;
+  top: calc(50% - 40px);
+  margin-left: 87px !important;
+  font-family: SimplonBP-Regular;
+  font-size: 14px;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  letter-spacing: -0.3px;
+  color: #777777;
+  
+}
+
+/* email input */
+/* the password input */
+/* the cpf input */
+.password , .cpf, .email{
+  font-family: 'SimplonBP-Light';
+  font-size: 42px;
+  font-weight: 300;
+  margin-left: 87px !important;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.3px;
+  width: 100%;
+  background-color: white !important;
+}
+
+.email{
+    color: #777777;
+}
+
+.password , .cpf {
+    color: #222222;
+}
+
+.in-cpf-page-text{
+    width: 204px !important;
+}
+/* end */
+
+/* placeholder password after */
+.password-after, .cpf-after{
+    font-family: 'SimplonBP-Light';
+    position: absolute;
+    top: calc(50% - 50px);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.3px;
+    color: #777777;
+    margin-left: 87px !important;
+}
+
+/* placeholder password after */
+.cpf-after{
+    margin-left: 87px !important;
+    z-index: 100;
+}
+
+/* error message */
+.error-message{
+    position: absolute;
+    margin-top: auto;
+    top: calc(50% - 50px);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.3px;
+    color: #ff0000;
+    margin-left: 87px !important;
+}
+
+.float-right{
+    text-align: right;
+    display: block;
+    float: right !important;
+    clear: right !important;
+    width: 100%;
+}
+
+.margin-right{
+    margin-right: 76px !important;
+    width: 4vw !important;
+    float: right !important;
+    clear: right !important;
+}
+
+/* the button continue */
+.btn-continue, .loading{
+  margin-left: 87px !important;
+  font-family: SimplonBP-Light;
+  font-size: 42px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.3px;
+  color: #cccccc;
+  cursor: default !important;
+}
+
+/* cpf img */
+.loading, .sucess_img , .error_img{
+    background-repeat: no-repeat;
+    margin: 0px !important;
+}
+
+.error_cpf{
+    display: none;
+}
+
+/*.sucess_cpf, .error_cpf{
+    display: flex;
+    align-items: center;
+}*/
+
+.sucess_text, .error_txt{
+    margin-right: 14px;
+    font-family: 'SimplonBP-Light' !important;
+    font-size: 21px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: -0.7px;
+    color: #4a4a4a;
+}
+
+
+/* container to img loading */
+.loading-container{
+    margin-left: 87px !important;
+}
+
+/* text on cpf page */
+.know_cpf , 
+.sucess_text , 
+.error_text{
+  font-family: 'SimplonBP-Light';
+  padding-left: 0px !important;
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.7px;
+  color: #4a4a4a;
+}
+
+.sucess_text , 
+.error_text,
+.know_cpf.visible{ /* fix the margin error */ 
+   margin-left: 15px !important; 
+}
+
+.know_cpf,
+.sucess_cpf,
+.error_cpf,
+.loading-container{
+   display: none;
+}
+
+.visible{
+   display: flex !important;
+   align-items: center; 
+   margin-left: 87px !important;
+}
+
+.invisible{
+    display: none !important;
+}
+
+.btn-continue:active{
+  /*color: #e03d6f;*/
+}
+
+
+/* eye input checkbox */
+input[type="checkbox"].eye_style{
+    display: none;
+    border: none;
+    border-width: 0px;
+}
+
+input[type="checkbox"].eye_style + label{
+    display: none;
+    width: 26px !important;
+    height: 26px;
+    background-image: url(../svg/eye_unchecked.svg);
+    background-repeat: no-repeat;
+    border: none;
+    border-width: 0px;
+    margin: 0px !important;
+}
+
+input[type="checkbox"].eye_style:active + label, 
+input[type="checkbox"].eye_style:checked + label{
+    display: none;
+    width: 26px !important;
+    opacity: 1;
+    background-image: url(../svg/eye_svg.svg);
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"].eye_style:hover{
+    display: none;
+    width: 26px !important;
+    opacity: 1;
+    border: none;
+    border-width: 0px;
+    background-image: url(../svg/eye_svg.svg) !important;
+    background-repeat: no-repeat !important;;
+}
+
+/* center child items on screen */
+.vertical-align-items{
+    height: 100% !important;
+}
+
+
+/* arrow "Entrar" button */
+.arrow-continue{
+    float: right;
+    vertical-align: middle;
+    background: url(../svg/next.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 23px;
+    border: 0 !important;
+    border-width: 0px !important;
+    outline: none !important;
+}
+
+
+.img-container{
+    display: inline-block !important;;
+    float: right !important;
+    clear: right !important;;
+    width: 100%;
+    margin-right: 70px;
+}
+
+
+.text-show{
+  font-family: "SimplonBP-Light";
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.6px;
+  color: #777777;
+  margin-right: 76px !important;
+}
+
+
+
+/* align div in vertical center */
+.inline{
+    display: flex;
+    align-items: center;
+}
+
+/* remove default padding in bootstrap */
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+.col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3,
+.col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11,
+.col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5,
+.col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+/* popover */
+.popover{
+    background-color: white !important;
+    width: 364px !important;
+    max-width: 364px !important;
+    height: 50px !important;
+    color: #222222 !important;
+    font-size: 14px !important;
+    padding-left:  7px !important;
+    font-family: 'SimplonBP-Regular' !important;
+    border: #dbdbdb solid 2px !important;
+    border-radius: 2px !important;
+    -webkit-box-shadow: 0 0 0 white !important;
+    box-shadow: 0 0 0 white !important;
+    left: 87px !important;
+}
+
+.popover-content{
+    width: 364px !important;
+    max-width: 364px !important;
+    height: 50px !important;
+}
+
+.popover > .arrow {
+    top: -21px !important;
+    left: 11% !important;
+    border-width: 10px !important;
+}
+
+.item-row-cpf{
+    background-color: white;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) and (max-width: 1199px){
+     
+    
+    /* //NOTE fix menu size in tablet */
+    /*.sidebar {
+        font-size: 4.375rem;
+        text-align: -webkit-auto;
+        padding-right: 25px;
+        height: 15vh !important;
+    
+    
+    /* NOTE: fix to tablet size */
+    .sidebar_text, .in-cpf-page-text{
+       font-size: 6vw;
+       margin-top:  43px !important;
+    }
+    
+    #password ,
+    .email,
+    .btn-continue{
+	   font-size: 4vw;
+    }
+    
+    .item-row{
+        /*height: 26.66vh !important;
+        max-height: 26.66vh !important;*/
+        background-color: white !important;
+    }
+    
+    .item-last{
+        background-color: #f5f5f5 !important;
+    }
+
+    
+    .email-name{
+      position: absolute !important;
+      /* margin-top: 5vh; */
+    }
+    
+    .menu-item-text{
+        font-size: 10px;
+    }
+    
+    
+    .custom-li,
+    .custom-li:before
+    {
+        font-size: 15px !important;
+        font-weight: 900;
+    }
+
+
+    
+}
+
+/* Responsive: Portrait tablets and up */
+/* this is the same that col-md on bootstrap */
+@media screen and (max-width: 767px) {
+    
+    .collapse > p,
+    .collapse.in,
+    .collapsing > p,
+    .collapse.in > p{
+        width: none !important;
+    }
+    
+    /* change the input text style */
+    input[type="text"],
+    input[type="password"]{
+          font-size: 21px;
+          font-weight: 100;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 5.36;
+          letter-spacing: -0.3px;
+          color: #777777;
+          height: 30px;
+    }
+    
+    
+    /* the sidebar menu */
+    .sidebar{
+        display: flex;
+        align-items: center;
+        height: 70px; /* fix size refactory in mobile device */
+        min-height: 70px;
+        max-height: 70px !important;
+    }
+    
+    
+    /* the logo img */
+    .img-mask{
+        width: 90px;
+        height: 41.1px;
+        object-fit: contain;
+        margin: 0 0 0 1.25rem !important;
+    }
+    
+    
+     /* text in sidebar */
+    .sidebar_text , .in-cpf-page-text{
+        display: flex;
+        align-items: center;
+        width: auto !important;
+        float: right;
+        text-align: right;
+        font-size: 14px;
+        letter-spacing: -0.3px;
+        margin-right: 1.3125rem !important;
+        box-sizing: border-box;
+        line-height: normal;
+        font-family: 'SimplonBP-Light';
+    }
+    
+    /* fix size refactory in mobile device */
+    form[name="form_login"],
+    .cpf_content{
+        height: calc(100vh - 68px)
+    }
+    
+    .item-row-cpf{
+        height: 50%; /* fix size refactory in mobile device */
+        max-height: 50%; /* fix size refactory in mobile device */
+    }
+    
+    /* each line */
+    .item-row{
+        height: 33.3%; /* fix size refactory in mobile device */
+        max-height: 33.3%; /* fix size refactory in mobile device */
+        background-color: white !important;
+    }
+    
+    .item-last{
+        background-color: #f5f5f5 !important;
+    }
+    
+    .email-name{
+      position: absolute !important;
+      /* margin-top: 5vh; */
+      margin-left: 31px !important;
+    }
+    
+    
+    /* the email input */
+    .email{
+        font-size: 18px;
+        letter-spacing: -0.9px;
+        margin-left: 31px !important;
+    }
+    
+    /* the password input and the button continue*/
+    .password, .btn-continue{
+      font-size: 21px;
+      letter-spacing: -1px;
+      margin-left: 31px !important;
+    }
+    
+    /* change placeholder for input */
+    ::-webkit-input-placeholder,
+    :-moz-placeholder, /* Firefox 18- */
+    ::-moz-placeholder,  /* Firefox 19+ */
+    :-ms-input-placeholder
+    {
+      font-size: 21px !important;
+    }
+
+    
+    .password-after , .error-message , .cpf-after{
+        font-size: 12px;
+        margin-left: 31px !important;
+        /* margin-top: 5vh !important; */
+    }
+    
+    .cpf-after{
+        /* margin-top: -40vh !important; */
+    }
+    
+    .loading-container, .visible{
+        margin-left: 31px !important;
+    }
+    
+    
+    /* eye checkbox */
+    label{
+        font-size: 14px !important;
+    }
+    
+    .eye_style{
+        display: block;
+    }
+    
+    input[type="checkbox"] + label {
+        display: none;
+    }
+    
+    input[type="checkbox"]:hover + label {
+        display: none !important;
+    }
+    
+    label{
+        display: none;
+    }
+    
+    /* show eye input check box */
+    input[type="checkbox"].eye_style + label,
+    input[type="checkbox"].eye_style:active + label ,
+    input[type="checkbox"].eye_style:checked + label,
+    input[type="checkbox"].eye_style:hover + label
+    {
+        display: block !important;
+    }
+    
+    /* fix margin issue */
+    .margin-right{
+        /* padding-right : 30px; */
+        float: right !important;
+        clear: right !important;
+        margin-right: 0px;
+    }
+    
+    /* popover class */
+    .popover{
+        background-color: white !important;
+        width: 85vw !important;
+        max-width: 85vw !important;
+        height: 32px !important;
+        font-size: 12px !important;
+        padding-left : 0px !important;
+        border-left-width: 0px !important;
+        border-right-width: 0px !important;
+        border-bottom-width: 0px !important;
+        left: 31px !important;
+    }
+
+    .popover-content{
+        width: 85vw !important;
+        max-width: 85vw !important;
+        height: 32px !important;
+        text-align: left;
+        padding-left: 0px !important;
+    }
+
+    .popover > .arrow {
+        border-width: 0px !important;
+    }
+    
+
+    
+    .menu-img{
+        width: 10vw;
+        height: 10vh;    
+    }
+    
+}
+
+/* to manage the checkbox position */
+@media screen and (min-width: 1500px){
+    .padding-right{
+        width : 6vw !important;
+    }
+    
+    .sidebar_text{
+        margin-top: 43px !important;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1499px){
+    .margin-right{
+        width : 4vw !important;
+    }
+    
+    .sidebar_text{
+        margin-top: 43px !important;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px){
+    .margin-right{
+        width : 5vw !important;
+        margin-right: 70px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px){
+    .margin-right{
+        margin-right: 70px !important;
+    }
+    
+}
+
+.align-items{
+    display: flex;
+    vertical-align: middle;
+    flex-direction: row;
+    flex-flow: inherit;
+    flex-wrap: nowrap;
+    flex: 1;
+    align-self: center;
+    align-items: center;
+}
+
+.popover{
+    left: 0px !important;
+    top: -7vh !important;
+    border-width: 0px !important;
+    height: 30px !important;
+    width: 140px !important;
+    object-fit: contain;
+    border-radius: 2px !important;
+    background-color: #e03d6f !important;
+    font-family: 'SimplonBP-Light' !important;
+    font-size: 14px  !important;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    color: #ffffff !important;
+    padding: 0px !important;
+    text-align: center !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    line-height: normal !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+
+.popover > .arrow,
+.popover > .arrow:after{
+    bottom: -10px !important;
+    left: 10% !important;
+    border-top-color: #e03d6f !important;
+    border-width: 7px !important;
+    margin-left: -7px !important;
+    top: auto !important;
+}
+
+.popover-content{
+    padding: 6px 14px !important;
+    width: 140px !important;
+}
+
+
+.container-fluid{
+    position: fixed !important;
+    margin: 0vh !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.sidebar {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #EB2D82, #EF3A67 50%, #F4484C 100%) !important;
+}
+
+.img-mask{
+    margin-left: 50px;
+    margin-top: 60px
+}
+
+
+
+
+/* center child items on screen */
+.vertical-align-items{
+    height: 100% !important;
+}
+
+
+
+
+/* align div in vertical center */
+.inline{
+    display: flex;
+    align-items: center;
+}
+
+/* remove default padding in bootstrap */
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+
+
+
+/*
+ *
+ *   Home
+ *   CSS
+ *
+ */
+
+/* full page vertical align */
+.start, .telephone, .wifi, .oiplay, .recharge, .help{
+    display:   flex;
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction: column;
+    flex-wrap:  nowrap;
+    text-align: left;
+    justify-content: center;
+}
+
+#start, #telephone, #wifi, #oiplay, #recharge, #help{
+    height: 100vh;
+}
+
+#help{
+    height : auto !important;
+}
+
+.sidebar-home{
+    text-align: left;
+}
+
+.background-white{
+    position: absolute;
+    left: 16.6666vw;
+    width: calc(100vw - 16.6666vw);
+    height: 100vh;
+    background-color: white;
+    z-index : 0;
+}
+
+
+.home_logo{
+    margin-left: 36px;
+    margin-top: 70px;
+    max-height: 62.5px;
+    min-height: 62.5px;
+}
+
+.img_container{
+    position: relative;
+}
+
+.exclamation{
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    width: 22px;
+    height: 22px;
+    background-color: #ec307b;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    color: #ffffff;
+    border-radius: 50%;
+    padding-top: 2px;
+}
+
+.sidebar-menu{
+    background-color: white;
+    background: white;
+}
+
+.exit_text{
+  position: absolute !important;
+  top: 90vh;
+  width: 31px;
+  height: 21px;
+  font-family: SimplonBP-Light;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.75px;
+  color: #ffffff;
+  margin-bottom: 60px !important;
+  margin-left: 36px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 100vh !important;
+    overflow-x: hidden;
+}
+
+/* hide the scroll bar */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.section-menu{
+   height: 100vh;
+}
+
+.menu-item{
+    border-bottom: solid 2px #dddddd;
+    min-height: 25vh;
+    min-height: 210px;
+    position: relative !important;
+    /* display: flex; */
+    /*align-items: center;*/
+    background-color: white !important;
+    text-align: center !important;
+}
+
+/* selected item */
+.selected{
+    position: absolute;
+    top: 0;
+    left: calc(100% - 6px);
+    min-height: 210px;
+    background-image:
+      linear-gradient(to bottom, #EB2D82, #EF3A67 50%, #F4484C 100%);
+    background-size: 6px 100%;
+    background-position: 0 0, 100% 0; 
+    background-repeat: no-repeat; 
+    min-width: 6px ;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.menu-item-align{
+    display: table-cell;
+    vertical-align: middle;
+    height: 210px;
+    /* width: 100% !important; */
+    min-width: 17vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.menu-img{
+    margin-bottom: 7px;
+}
+
+.menu-item-text{
+    font-family: SimplonOi-Headline;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.75px;
+    text-align: center;
+    color: #999999;
+}
+
+#fullpage{
+    font-family: SimplonBP-Light;
+    background-color: #f5f5f5;
+    padding-left: 98px;
+    font-style: normal;
+    font-stretch: normal;
+    color: #222222;
+    text-align: left;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#fullpage > .section{
+    display: table;
+}
+
+#fullpage > .section > .fp-tableCell{
+    display: table-cell !important;
+    vertical-align: middle !important;
+    display: inline-block; /* IE pollyfill */
+}
+
+#fullpage > .section > .content > p ,
+#fullpage > .section > .fp-tableCell > .content > p,
+.wifi > .fp-tableCell > .wrap > .content > p{
+    margin-bottom: 5vh;
+}
+
+
+/* start */                  
+.start > .title,
+.start > .fp-tableCell > .title{
+    font-family: 'SimplonBP-Regular';
+    font-size: 63px;
+    font-weight: 300;
+    line-height: 1.11;
+    letter-spacing: -0.75px;
+    position: relative;
+}
+
+.start > .content,
+.start > .fp-tableCell > .content{
+    width: 700px;
+    padding-right: 4vw;
+    margin-top: 38px;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: -0.75px;
+}
+
+/* phone */
+#telephone,
+#telephone > .fp-tableCell{
+    padding-bottom: 30vh !important;
+}
+
+.telephone > .title,
+.telephone > .fp-tableCell > .title{
+  font-family: 'SimplonBP-Regular';
+  font-weight: 300;
+  font-size: 42px;
+  letter-spacing: -0.75px;
+  color: #222222; 
+  margin-bottom: 32px;
+}
+
+
+.telephone > .content,
+.telephone > .fp-tableCell > .content{
+  width: 700px;
+  padding-right: 4vw;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.75px;
+  color: #222222;
+}
+
+.telephone > .btn_installation,
+.telephone > .fp-tableCell > .btn_installation{
+  width: 270px;
+  height: 70px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #e03d6f;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.75px;
+  text-align: center;
+  color: #e03d6f;
+}
+
+.btn_start{
+  width: 280px;
+  height: 70px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #ef3a67;
+  font-family: "SimplonBP-Light";
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #ef3a67;
+}
+
+
+/* wifi */
+/* TODO : needs create a wrapper to fix scrolling */
+.wifi > .title,
+.wifi > .fp-tableCell > .title,
+.wifi > .fp-tableCell > .wrap > .title{
+  font-family: 'SimplonBP-Regular';
+  font-weight: 300;
+  font-size: 42px;
+  letter-spacing: -0.75px;
+  color: #222222;
+  margin-bottom: 36px;
+}
+
+
+.wifi > .content,
+.wifi > .fp-tableCell > .content,
+.wifi > .fp-tableCell > .wrap > .content{
+  width: 700px;
+  padding-right: 4vw;
+  font-size: 28px;
+  line-height: 1.25;
+  letter-spacing: -0.75px;
+  color: #222222;
+}
+
+
+.wifi > .btn_connection,
+.wifi > .fp-tableCell > .btn_connection,
+.wifi > .fp-tableCell > .wrap > .btn_connection{
+  width: 270px;
+  height: 70px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #e03d6f;
+  font-size: 21px;
+  letter-spacing: -0.75px;
+  text-align: center;
+  color: #e03d6f;
+  margin-bottom: 5vh;
+}
+
+.wifi > .footer,
+.wifi > .fp-tableCell > .footer,
+.wifi > .fp-tableCell > .wrap > .footer,
+.wifi > .fp-tableCell > .wrap > .footer > p
+{
+  width : 700px;
+  font-size: 21px;
+  line-height: 1.43;
+  letter-spacing: -0.75px;
+  color: #222222;
+  padding-right: 4vw;
+}
+
+#recharge{
+    height: 100vh !important;
+}
+
+/* oiplay and recharge */
+
+.oiplay > .title , 
+.recharge > .title ,
+.oiplay > .fp-tableCell > .title , 
+.recharge > .fp-tableCell > .title 
+{
+  font-family: 'SimplonBP-Regular';
+  font-weight: 300;
+  font-size: 42px;
+  letter-spacing: -0.75px;
+  color: #222222;
+  margin-bottom: 36px;
+  max-height: 100vh !important;
+}
+
+.oiplay > .content , 
+.oiplay > .fp-tableCell > .content , 
+.recharge > .content ,
+.recharge > .fp-tableCell > .content{
+  width: 700px;
+  padding-right: 4vw;
+  font-size: 28px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: -0.75px;
+  color: #222222;
+}
+
+.oiplay > .btn_oiplay ,
+.recharge > .btn_recharge,
+.oiplay > .fp-tableCell > .btn_oiplay ,
+.recharge > .fp-tableCell > .btn_recharge{
+  width: 270px;
+  height: 70px;
+  border-radius: 3px;
+  font-size: 21px;
+  letter-spacing: -0.75px;
+  background-color: #ffffff;
+  border: solid 1px #e03d6f;
+  text-align: center;
+  color: #e03d6f;
+  margin-bottom: 5vh;
+}
+
+.oiplay > .footer ,
+.recharge > .footer ,
+.oiplay > .fp-tableCell > .footer  ,
+.recharge > .fp-tableCell > .footer{
+  font-size: 21px !important;
+  line-height: 1.43;
+  letter-spacing: -0.75px;
+  color: #222222;
+  padding-right: 4vw;
+}
+
+/* faq */
+#help,
+#wifi
+{ /* enable scroll */
+    height: 100vh !important;
+    max-height: 100vh !important;
+    overflow-y: scroll !important;
+}
+
+
+.help > .title,
+.help > .fp-tableCell > .title,
+.help > .fp-tableCell > .wrap > .title{
+  font-family: 'SimplonBP-Regular';
+  font-weight: 300;
+  margin-top: 76px;
+  font-size: 42px;
+  letter-spacing: -0.75px;
+  color: #222222;
+  margin-bottom: 42px;
+}
+
+/* custom li */
+.help > .content > ol ,
+.help > .fp-tableCell > .content > ol,
+.help > .fp-tableCell > .wrap > .content > ol{ 
+    counter-reset: item;
+    padding-left: 0px;
+}
+
+
+ol div li { display: block; }
+.custom-li:before{
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: -0.75px;
+    color: #777777;
+    content: counter(item) ". ";
+    counter-increment: item;
+    margin-right: 28px;
+    margin-left: 0px;
+}
+.custom-li {
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: -0.75px;
+    color: #222222;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+.collapse,
+.collapsing,
+.collapse.in
+{
+    padding-left: 14px !important;
+}
+
+ul{
+    display: inline-block !important;
+}
+
+ul > li{
+  width: 640px;
+  font-family: 'SimplonBP-Light';
+  font-size: 18px;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.75px;
+  color: #222222;
+}
+
+.item{
+    cursor: pointer;
+}
+
+.item > div > ul {
+    padding-left: 0px !important;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+ul > li:before{
+    content : '•' !important;
+    padding-right: 12px;
+}
+
+/* item */
+.help > .content > ol > .item,
+.help > .fp-tableCell > .content > ol > .item,
+.help > .fp-tableCell > .wrap > .content > ol > .item{
+    /* border-top: solid 1px #dddddd; */
+    border-bottom: solid 1px #dddddd;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    margin-right: 70px;
+}
+
+.help > .fp-tableCell > .wrap > .content > ol > .item:first-child{
+    border-top: solid 1px #dddddd;
+}
+
+
+/* create a wrap for the content 
+for setting the max height to the content 
+to implements the scroll vertical */
+/* make the content completaly scrollable in y direction */
+.help > .fp-tableCell > .wrap{
+    height: 100vh ;
+    max-height: 100vh !important;
+    overflow-y: scroll !important;
+}
+
+
+
+/* internal intent content, inside collapse */
+.help > .content > ol > .item > .collapse,
+.help > .content > ol > .item > .collapsing,
+.help > .content > ol > .item > .collapse.in,
+.help > .fp-tableCell > .content > ol > .item > .collapse,
+.help > .fp-tableCell > .content > ol > .item > .collapsing,
+.help > .fp-tableCell > .content > ol > .item > .collapse.in
+.help > .fp-tableCell > .wrap > .content > ol > .item > .collapse,
+.help > .fp-tableCell > .wrap > .content > ol > .item > .collapsing,
+.help > .fp-tableCell > .wrap > .content > ol > .item > .collapse.in
+{
+    width: 700px;
+    padding-right: 4vw;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.75px;
+    color: #222222;
+    margin-left: 38px;
+    margin-top: 14px;
+    
+}
+
+/* change the cursor to pointer or hand */
+.help > .fp-tableCell > .wrap > .content > ol > .item > li
+{
+    cursor: hand;
+    cursor: pointer;
+}
+
+.help > .footer,
+.help > .fp-tableCell > .footer,
+.help > .fp-tableCell > .wrap > .footer{
+  font-size: 28px;
+  line-height: 1.25;
+  letter-spacing: -0.75px;
+  color: #222222;
+  margin-top: 67px;
+  margin-bottom: 99px !important;
+  padding-right: 4vw;
+}
+
+i{
+    font-weight: 300;
+}
+
+.help > .footer > span,
+.help > .fp-tableCell > .footer > span,
+.help > .fp-tableCell > .wrap > .footer > span,
+div > p > a{
+    color: #e03d6f !important;
+}
+
+a:active,
+{
+    text-decoration: none !important;
+}
+
+p >  a{
+    text-decoration: underline !important;
+}
+
+.help_item_center,
+{
+    height: 100%;
+}
+
+
+
+/* help center float content and show background img */
+.img_container_help{
+    height: 10px;
+    width: 23px;
+    text-align: right;
+    margin-left: auto;
+    float: right;
+    clear: right;
+     background-image: url(./svg/arrow_down.svg) !important
+}
+
+.img_container_help_down{
+    height: 10px;
+    width: 23px;
+    text-align: right;
+    margin-left: auto;
+    float: right;
+    clear: right;
+    background-image: url(./svg/arrow_up.svg)
+}
+
+
+
+
+/* background img of arrow */
+.arrow_item_help{
+    /* display: flex;
+    align-items: center; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* hover button on dashboard page */
+.btn_hover_dash:hover,
+.btn_hover_dash:focus,
+.btn_hover_dash:active
+.btn_start:hover,
+.btn_start:focus,
+.btn_start:active
+{
+    border-radius: 3px !important;
+    background-color: #e03d6f !important;
+    border: solid 1px #ffffff !important;
+    color: white !important;
+    outline: 0 !important;
+}
+
+.link_after{
+    margin-top: 5vh;
+}
+
+.link_after > a{
+    font-family: "SimplonBP-Light";
+    font-size: 21px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.8px;
+    color: #4a4a4a;
+}
+
+.link_after > a:hover,
+.link_after > a:active,
+.link_after > a:focus{
+    color: #4a4a4a;
+    text-decoration: underline !important;
+}
+
+
+/* confirmation screen */
+.btn_confirmation{
+  width: 270px;
+  height: 70px;
+  border-radius: 3px;
+  border: solid 3px #ffffff !important;
+  background-color: #ffffff !important;
+  border-style: solid !important;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, #ea288c, #ff6d00 90%, #ffff00);
+  border-image-slice: 1;
+  font-size: 21px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  color: #e03d6f;
+}
+
+.confirmation_logo{
+    width: 205px;
+    height: 83px;
+    text-align: center;
+    display:block;
+    margin:auto;
+}
+
+
+.btn_confirmation:hover,
+.btn_confirmation:focus,
+.btn_confirmation:active
+{
+    border-radius: 3px !important;
+    background-color: #e03d6f !important;
+    border: solid 1px #ffffff !important;
+    color: white !important;
+    outline: 0 !important;
+}
+
+.confirmation{
+    display: flex;
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction:         column;
+    flex-wrap: nowrap;
+    text-align: left;
+    justify-content: center;
+    height: 100vh;
+}
+
+.confirmation > .title{
+  font-family: 'SimplonBP-Regular';
+  font-weight: 300;
+  font-size: 63px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #ffffff;
+}
+
+.confirmation > .content{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  max-width: 40vw;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+
+.confirmation_txt{
+    float: left;
+    clear: left;
+    margin-left: 30px;
+}
+
+.confirmation_img{
+    width: 5px;
+    height: 14px;
+    border-width: 0;
+    border: 0;
+    background-color: transparent;
+    background-image: url(./svg/confirmation.svg) !important;
+    background-repeat: no-repeat;
+}
+
+.btn_confirmation:hover .confirmation_img   ,
+.btn_confirmation:focus  .confirmation_img,
+.btn_confirmation:active  .confirmation_img
+{
+    background-image: url(./svg/confirmation_active.svg) !important;
+    color: #ffffff;
+}
+
+.confirmation_img_container{
+    float: right;
+    clear: right;
+    background-color: transparent;
+    border-width: 0;
+    border: 0;
+}
+
+.confirmation_img{
+    margin-right: 30px;
+}
+
+/* the external content */
+.external-content{
+    height: 90vh;
+    min-height: 90vh;
+    max-height: 90vh;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.text_container_help{
+    float: right;
+    clear: right;
+}
+
+.break_line{
+    display: none;
+}
+
+/* home screen */
+/* I had to modify this to resize on table size */
+/* before the max-width was 1200px */
+/* before it is 768px */
+/* @media (max-width: 767px){ */
+@media (max-width: 413px){
+    
+    .sidebar-home{
+        height: 70px !important; /* fix auto resize mobile */
+    }
+    
+    .scrollable-menu{
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
+    }
+    
+    .title{
+        font-size: 24px;
+        margin-bottom: 0px !important;
+    }
+    
+    .title,
+    .p,
+    .content,
+    .footer,
+    button{
+        line-height: 21px;
+    }
+    
+    .footer{
+        width: inherit;
+    }
+    
+    .p,
+    .content,
+    .footer{
+        font-size: 16px;
+    }
+    
+    .scrollable-menu , 
+    #navbar-dashboard , 
+    .nav.nav-tabs.nav-stacked,
+    #navbar-dashboard > ul,
+    #navbar-dashboard > ul > .section
+    {
+        max-height: 72px !important; /* fix auto resize mobile */
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        display: flex;
+    }
+    
+    .menu-item{
+        min-height: 72px !important;
+        max-height: 72px !important;
+        max-width: 89px !important;
+        float: left;
+        border-bottom: none;
+        border-right: solid 2px #dddddd;
+    }
+    
+    .menu-item-text > span{
+        color: #999999 !important;
+    }
+    
+    .help > .menu-item{
+        border-right: none;
+    }
+    
+    .menu-item-align{
+        display: table-cell;
+        vertical-align: middle;
+        /* height: 15vh !important;
+        min-width: 25vw !important;
+        max-width: 25vw !important; */
+        min-height: 72px !important;
+        max-height: 72px !important;
+        max-width: 89px !important;
+        min-width: 89px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        flex-grow: 1 !important;
+    }
+    
+    #fullpage > .section ,
+    #fullpage > .section > .fp-tableCell{
+        display: block !important;
+    }
+    
+    #navbar-dashboard > ul > .section > li{
+        font-size: 10px;
+        min-height: 72px !important;
+        max-height: 72px !important;
+        max-width: 89px !important;
+        float: left;
+    }
+    
+    .selected{
+        position: absolute;
+        top: calc(100% - 6px) !important;
+        left: 0;
+        max-height: 6px !important;
+        height: 6px !important;
+        background-image:
+          linear-gradient(to bottom, #EB2D82, #EF3A67 50%, #F4484C 100%);
+        background-size: 100% 6px !important; 
+        background-position: 0 0, 0 0 !important;
+        background-repeat: no-repeat; 
+        min-width: 25vw;
+        max-width: 25vw ;
+        background-color: transparent;
+    }
+    
+    
+    #fullpage{
+        display: block;
+        float: left !important;
+        height: inherit;
+        width: 100vw;
+        display: flex;
+        margin-left: 0px !important;
+        padding-left:  0px !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden;
+    }
+    
+    #fullpage > .section {
+        height: calc(100vh - 142px) !important;
+        min-width: 100vw !important;
+        flex-grow: 1 !important;
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+    }
+    
+    
+    
+    .menu-img{
+        width: 24px;
+        height: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+    
+    
+    .sidebar-home{
+        height: 81px ; /* fix auto resize mobile */
+    }
+    
+    .scrollable-menu{
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
+    }
+    
+    ul,
+    .scrollable-menu , 
+    #navbar-dashboard , 
+    .nav.nav-tabs.nav-stacked,
+    #navbar-dashboard > ul,
+    #navbar-dashboard > ul > .section,
+    .section-menu
+    {
+        width: 100vw;
+        max-height: 81px !important; /* fix auto resize mobile */
+        max-width: 100vw !important;
+        display: flex;
+    }
+    
+    
+    .section-menu > li,
+    .menu-item{
+        min-height: 81px !important;
+        max-height: 81px !important;
+        min-width: 20vw !important;
+        max-width: 20vw !important;
+        float: left;
+        border-bottom: none;
+        border-right: solid 2px #dddddd;
+        border-left: none;
+    }
+    
+    .menu-item-align{
+        display: table-cell;
+        vertical-align: middle;
+        height: 81px !important;
+        min-width: 20vw !important;
+        max-width: 20vw !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        flex-grow: 1 !important;
+    }
+    
+    .title{
+        font-size: 28px !important;
+    }
+    
+    .content{
+        font-size: 16px !important;
+    }
+    
+    .footer,
+    .footer > p{
+        font-size: 16px !important;
+    }
+    
+    button{
+        width: 100% !important;
+        height: 70px !important;
+    }
+    
+    #fullpage > .section ,
+    #fullpage > .section > .fp-tableCell{
+        display: block !important;
+    }
+    
+    #navbar-dashboard > ul > .section > li{
+        font-size: 10px;
+        min-height: 81px !important;
+        max-height: 81px !important;
+        max-width: 20vw !important;
+        float: left;
+    }
+    
+    .selected{
+        position: absolute;
+        top: calc(100% - 6px) !important;
+        left: 0;
+        max-height: 6px !important;
+        height: 6px !important;
+        background-image:
+          linear-gradient(to bottom, #EB2D82, #EF3A67 50%, #F4484C 100%);
+        background-size: 20vw 6px !important; 
+        background-position: 0 0, 0 0 !important;
+        background-repeat: no-repeat; 
+        min-width: 20vw !important;
+        max-width: 20vw  !important;
+        background-color: transparent;
+    }
+    
+    
+    #fullpage{
+        display: block;
+        float: left !important;
+        height: calc(100vh - 151px) !important;
+        width: 100vw;
+        display: flex;
+        margin-left: 0px !important;
+        padding-left:  0px !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+    }
+    
+    #fullpage > .section {
+        height: calc(100vh - 142px);
+        min-width: 100vw !important;
+        flex-grow: 1 !important;
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+    }
+    
+    
+    
+    .menu-img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .collapse > p,
+    .collapsing > p,
+    .collapse.in > p,
+    .collapse > ul > li,
+    .collapsing > ul > li,
+    .collapse.in,
+    .collapsing
+    {
+        font-size: 16px;
+        width: 100% !important;
+    }
+    
+}
+
+/* simple max-width query */
+@media ( min-width: 1200px ){
+    .sidebar{
+        height: 100vh; 
+    }
+    
+    /* home */
+    .home_logo{
+        max-height: 62.5px !important;
+        min-height: 62.5px !important;
+    }
+     /* end home */
+    
+
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    
+    .break_line{
+        display: block;
+    }
+    
+    .home_logo {
+        margin-top: calc(16.66vh/2 - 50px * 3/4);
+    }
+     
+    
+    /* //NOTE fix menu size in tablet */
+    .sidebar-home{
+        height: 100vh !important;
+        width : 15vw !important;
+    }
+    
+    .home_logo{
+        width : 10vw;
+    }
+    
+    .section > li > a > div,
+    .selected,
+    .slide.menu-item,
+    .menu-item-align{
+        height:  16.666vh !important;
+        min-height:  16.666vh !important;
+        min-width: 15vw !important;
+    }
+    
+    /* NOTE: fix to tablet size */
+    .sidebar_text, .in-cpf-page-text{
+       font-size: 6vw;
+       margin-top:  43px !important
+    }
+    
+    .selected{
+        left: calc(100% - 6px) !important;
+    }
+    
+    
+    .menu-item-text{
+        /* font-size: 10px; */
+    }
+    
+    
+    .custom-li,
+    .custom-li:before
+    {
+        /* font-size: 15px !important; */
+        font-weight: 900;
+    }
+    
+    .help > .content > ol > .item > .collapse,
+    .help > .content > ol > .item > .collapsing,
+    .help > .content > ol > .item > .collapse.in,
+    .help > .fp-tableCell > .content > ol > .item > .collapse,
+    .help > .fp-tableCell > .content > ol > .item > .collapsing,
+    .help > .fp-tableCell > .content > ol > .item > .collapse.in
+    .help > .fp-tableCell > .wrap > .content > ol > .item > .collapse,
+    .help > .fp-tableCell > .wrap > .content > ol > .item > .collapsing,
+    .help > .fp-tableCell > .wrap > .content > ol > .item > .collapse.in
+    {
+        width: 100% !important;
+        /* font-size: 14px !important; */
+    }
+    
+    
+    #fullpage{
+        padding-left: 7vw !important;
+        width: 70vw;
+    }
+    
+    .text_container_help{
+        width: 40vw;
+        float: right;
+        clear: right;
+    }
+    
+    .content{
+        width: 60vw !important;
+        /* padding-right:  70px !important; */
+    }
+    
+}
+
+/* Responsive: Portrait tablets and up */
+/* this is the same that col-md on bootstrap */
+@media screen and (max-width: 767px) {
+    
+    .exclamation{
+        top: 0%;
+    }
+    
+    
+    .link_after > a{
+        font-size: 16px;
+    }
+    
+    .break_line{
+        display: none;
+    }
+    
+    .exit_text{
+        position: relative !important;
+        top: 0px !important; 
+        margin-bottom: 0px !important;
+        float: right;
+        clear: right;
+        text-align: right;
+        margin-right: 10%;
+    }
+    
+    body{
+        letter-spacing: -0.3px !important;
+    }
+    
+    .content{
+        font-size: 16px !important;
+    }
+    
+    #fullpage > .section > .content > p ,
+    #fullpage > .section > .fp-tableCell > .content > p{
+        line-height: 21px !important;
+        margin-bottom: 21px;
+    }
+    
+    /* the sidebar menu */
+    .sidebar{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    
+     /* text in sidebar */
+    .sidebar_text , .in-cpf-page-text{
+        display: flex;
+        align-items: center;
+        width: auto !important;
+        float: right;
+        text-align: right;
+        font-size: 2vh;
+        letter-spacing: -0.3px;
+        margin-right: 1.3125rem !important;
+        box-sizing: border-box;
+        line-height: normal;
+    }
+    
+    
+    /* fix margin issue */
+    .margin-right{
+        /* padding-right : 30px; */
+        float: right !important;
+        clear: right !important;
+        margin-right: 0px;
+    }
+    
+    /* home */
+    .menu-item-text{
+        font-size: 10px;
+    }
+    
+    .menu-img{
+        width: 24px;
+        height: 24px;    
+    }
+    
+    .sidebar-home{
+        display: flex;
+        align-items: center;
+    }
+    
+    .home_logo{
+        margin: 2% auto auto 10% !important;
+        width: 89.4px;
+        height: 40.5px;
+        object-fit: contain;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    #fullpage > .section {
+        height: 70vh !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        /* float: left !important; */
+        flex-grow: 1 !important; /* to align side by side item */
+        padding-top: 39px;
+        padding-left:  40px !important;
+        padding-right: 40px !important;
+        table-layout: auto;
+    }
+    
+    .fp-tableCell{
+        height: 70vh !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        /* padding-right: 15vw !important; */
+    }
+    
+    .section-menu{
+        padding-right: 0px;
+    }
+     
+    .item-align, 
+    .menu-item, 
+    .menu-item-align,
+    .section-menu > li {
+        height: 72px;
+        max-height: 72px;
+        min-width:  90px;
+        max-width:  90px;
+    }
+    
+    .selected{
+        min-width: 90px;
+        max-width: 90px;
+        height: 6px !important;
+        min-height: 6px !important;
+        max-height: 6px !important;
+        background-size: 90px 6px ; 
+    }
+    
+    .exit_text{
+        font-size:14px;
+    }
+    
+    /* each page */
+    .start > .title,
+    .start > .fp-tableCell > .title{
+        margin-top : 0 !important;
+        font-size: 28px;
+        font-weight: bold !important;
+        letter-spacing: -0.3px !important;
+    }
+
+    .help > .fp-tableCell > .wrap{
+        overflow-y: scroll !important;
+    }
+
+    .telephone > .title,
+    .telephone > .fp-tableCell > .title,
+    .wifi > .title,
+    .wifi > .fp-tableCell > .title,
+    .wifi > .fp-tableCell > .wrap > .title,
+    .oiplay > .title , 
+    .recharge > .title ,
+    .oiplay > .fp-tableCell > .title , 
+    .recharge > .fp-tableCell > .title ,
+    .help > .title,
+    .help > .fp-tableCell > .title,
+    .help > .fp-tableCell > .wrap > .title
+    {
+        margin-top : 0 !important;
+        font-size: 21px;
+        font-weight: bold !important;
+        letter-spacing: -0.3px;
+    }
+    
+    
+    .start > .content,
+    .start > .fp-tableCell > .content,
+    .telephone > .content,
+    .telephone > .fp-tableCell > .content,
+    .wifi > .content,
+    .wifi > .fp-tableCell > .content,
+    .wifi > .fp-tableCell > .wrap > .content,
+    .oiplay > .content , 
+    .recharge > .content ,
+    .oiplay > .fp-tableCell > .content , 
+    .recharge > .fp-tableCell > .content ,
+    .help > .content,
+    .help > .fp-tableCell > .content,
+    .help > .fp-tableCell > .wrap > .content,
+    .wifi > .footer,
+    .wifi > .fp-tableCell > .footer,
+    .wifi > .fp-tableCell > .wrap > .footer ,
+    .recharge > .footer,
+    .recharge > .fp-tableCell > .footer,
+    .help > .footer, 
+    .help > .fp-tableCell > .footer ,
+    .help > .fp-tableCell > .wrap >  .footer,
+    .wifi > .footer, 
+    .wifi > .fp-tableCell > .footer, 
+    .wifi > .fp-tableCell > .wrap > .footer, 
+    .oiplay > .footer, .recharge > .footer,
+    .oiplay > .fp-tableCell > .footer,
+    .recharge > .fp-tableCell > .footer
+    {
+        font-size: 14px;
+        margin: 5vh 0px 5vh 0px !important;
+        line-height: 20px !important;
+        width: inherit !important;
+        word-wrap: break-word;
+        padding-right: 0px;
+    }
+    
+    .wifi > .fp-tableCell > .wrap > .footer > p{
+        font-size: 14px;
+        line-height: 20px !important;
+        width: inherit !important;
+        word-wrap: break-word;
+        padding-right: 0px;
+    }
+    
+    .footer > p{
+        font-size: 14px;
+        width: inherit;
+    }
+    
+    /* Fix the mobile content size */
+    .help > .fp-tableCell > .wrap > .content{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    
+    .custom-li:before{
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+        margin-right: 9px;
+        margin-left: 0px;
+    }
+    .custom-li {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+    }
+
+    /* item */
+    .help > .content > ol > .item,
+    .help > .fp-tableCell > .content > ol > .item,
+    .help > .fp-tableCell > .wrap > .content > ol > .item{
+        /* border-top: solid 1px #dddddd; */
+        border-bottom: solid 1px #dddddd;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin-right: 0px;
+        /* width: 70vw !important; */
+    }
+    
+    .help > .fp-tableCell > .wrap > .content > ol > .item:first-child{
+        border-top: solid 1px #dddddd;
+    }
+    
+    /* ul content */
+    ul > li{
+        font-size: 14px;
+    }
+    
+    .item > div > p{
+        padding-right: 22.5px;
+    }
+    
+    
+    /* internal intent content, inside collapse */
+    .help > .content > ol > .item,
+    .help > .content > ol > .item > .collapse,
+    .help > .content > ol > .item > .collapsing,
+    .help > .content > ol > .item > .collapse.in,
+    .help > .fp-tableCell > .content > ol > .item > .collapse,
+    .help > .fp-tableCell > .content > ol > .item > .collapsing,
+    .help > .fp-tableCell > .content > ol > .item > .collapse.in,
+    .help > .fp-tableCell > .wrap > .content > ol > .item > .collapse,
+    .help > .fp-tableCell > .wrap> .content > ol > .item > .collapsing,
+    .help > .fp-tableCell > .wrap> .content > ol > .item > .collapse.in
+    {
+        width: 70vw;
+        font-size: 14px;
+        margin-left: 5px;
+        padding-right: 0px;
+        letter-spacing: -0.3px;
+    }
+    
+    /* the arrow */
+    .img_container_help,
+    .img_container_help_down
+    {
+        /* width: 3vw;
+        height: 6vh;*/
+        background-size: 3.7vw;
+        background-repeat: no-repeat;
+        background-position: -0.3vw 0px;
+    }
+    
+    /* active scroll vertical */
+    .help > .fp-tableCell > .title ,
+    .help > .fp-tableCell > .wrap >  .title{
+        height : auto !important;
+        display: inline-block;
+    }
+    
+    .help > .fp-tableCell > .content ,
+    .help > .fp-tableCell > .wrap >  .content{
+        height : auto !important;
+        display: inline-block;
+    }
+    
+    .help > .footer, 
+    .help > .fp-tableCell > .footer ,
+    .help > .fp-tableCell > .wrap >  .footer{
+        height: auto !important;
+        display: inline-block;
+        word-wrap: break-word;
+    }
+    
+    .telephone > .btn_installation,
+    .telephone > .fp-tableCell > .btn_installation,
+    {
+      width : inherit;
+      height: 70px;
+      
+    }
+    
+    .btn_start{
+        width: inherit;
+    }
+    
+    
+    .help > .title,
+    .help > .fp-tableCell > .title,
+    .help > .fp-tableCell > .wrap > .title{
+        margin-bottom: 21px;
+    }
+
+    .wifi > .btn_connection,
+    .wifi > .fp-tableCell > .btn_connection,
+    .wifi > .fp-tableCell > .wrap > .btn_connection{
+      width : 100%;
+      height: 70px;
+      margin-bottom: 0px;
+    }
+
+    .oiplay > .btn_oiplay ,
+    .recharge > .btn_recharge,
+    .oiplay > .fp-tableCell > .btn_oiplay ,
+    .recharge > .fp-tableCell > .btn_recharge{
+      width : inherit;
+      height: 70px;
+      margin-bottom: 0px;
+    }
+    
+    .collapse > p,
+    .collapse.in,
+    .collapsing > p,
+    .collapse.in > p{
+        letter-spacing: -0.3px;
+        width: 70vw;
+    }
+    
+    .text_container_help{
+        width : 60vw;
+        float: right;
+        clear: right;
+    }
+    
+    .space-bottom{
+        margin-bottom: 14px !important;
+    }
+    
+    .popover,
+    .popover > .popover-content{
+        width: 120px !important;
+        font-size: 12px !important;
+    }
+    
+    .popover-content{
+        padding: 8px 14px !important;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    .margin-right{
+        margin-right: 70px !important;
+    }
+    
+    #fullpage{
+        width: 70vw;
+        padding-right: 90px;
+    }
+    
+    .content
+    .content > p{
+        width: 60vw !important;
+        padding-right:  70px !important;
+    }
+}
+
+
+
