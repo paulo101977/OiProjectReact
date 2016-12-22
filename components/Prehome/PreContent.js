@@ -1,5 +1,10 @@
 import React, { PropTypes } from 'react';
 
+import SectionStart from './SectionStart';
+import SectionTelephone from './SectionTelephone';
+import SectionWifi from './SectionWifi';
+import SectionOiplay from './SectionOiplay';
+
 class PreContent extends React.Component {
 
   static propTypes = {
@@ -10,66 +15,13 @@ class PreContent extends React.Component {
     return (
         <div className="col-xs-12 col-sm-8 col-md-8 col-lg-8 content-home hide">
             <div id="fullpage">
-                <div className="section start">
-                    <div className="title" data-toggle="popover" data-placement="top" data-content="Nova mensagem">
-                        <div className="popover">
-                            <div className="arrow"></div>
-                            <div className="popover-content">Nova mensagem</div>
-                        </div>
-                        Oi, Washington
-                    </div>
-                    <div className="content">
-                        <p>O seu novo serviço ainda está sendo cadastrado na Minha Oi.</p>
+                <SectionStart></SectionStart>
 
-                        <p>Em breve, você terá acesso online a todos os serviços e facilidades da Minha Oi. Aproveite enquanto isso pra tirar suas dúvidas e descubra como a Oi pode te deixar mais conectado.</p>
+                <SectionTelephone></SectionTelephone>
 
-                    </div>
-                    <div className="footer">
-                        <button className="btn_start">Receber código no celular</button>
-                        <div className="link_after">
-                            <a href="#">Quero fazer depois</a>
-                        </div>
-                    </div>
-                </div>
+                <SectionWifi></SectionWifi>
 
-                <div className="section telephone">
-                    <div className="title">Fixo</div>
-                    <div className="content">
-                        <p>Contratou um novo Fixo da Oi?  Então agora é só aguardar a sua instalação.</p>
-
-                        <p>Siga o passo a passo da sua visita técnica pra começar a falar ilimitado com qualquer Oi.</p>
-                    </div>
-                    <button className="btn_installation btn_hover_dash">Acompanhe a Instalação</button>
-                </div>
-
-                <div className="section wifi">
-                    <div className="wrap">
-                        <div className="title">Oi WiFi</div>
-                        <div className="content">
-                            <p>Busque o hotspot mais perto de você pra se conectar em alta velocidade gratuitamente, sem consumir sua franquia de internet móvel ou celular.</p>
-
-                            <p>São mais de 2 milhões de pontos de acesso em todo o Brasil, entre aeroportos, hotéis, restaurantes, shoppings, cafés e outros locais. É só se cadastrar e aproveitar.</p>
-                        </div>
-                        <button className="btn_connection btn_hover_dash">Conectar-se</button>
-                        <div className="footer">
-                            <p>Pra acessar do seu tablet ou smartphone, você pode também baixar o aplicativo mobile nos sistemas Android e iOS.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="section oiplay">
-                    <div className="title">Oi Play</div>
-                    <div className="content">
-                        <p>Clientes TV HD podem assistir ao melhor do nosso conteúdo no Oi Play.</p>
-
-                        <p className="space-bottom">Quando e onde quiser, direto do seu computador, tablet ou smartphone, podendo acessar de mais de um dispositivo ao mesmo tempo. Divirta-se!</p>
-                    </div>
-                    <button className="btn_oiplay btn_hover_dash">Conheça o Oi Play</button>
-                    <div className="footer">
-                        <p>Entre com seu login da Minha Oi.</p>
-                    </div>
-
-                </div>
+                <SectionOiplay></SectionOiplay>
 
                 <div className="section recharge">
                     <div className="title">Recarga</div>

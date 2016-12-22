@@ -8,22 +8,19 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import { Router, Route, Link, browserHistory } from 'react-router'
+//import { Router, Route, Link, browserHistory } from 'react-router'
 import React, { PropTypes } from 'react';
-import Prehome from '../../components/Prehome';
-import Index from '../../components/Index';
-import s from './styles.css';
-import { title, html } from './index.md';
+import Main from '../../components/Index';
 
-class HomePage extends React.Component {
+class Index extends React.Component {
 
 
   render() {
     return (
-        <Prehome></Prehome>
+       <Index></Index>
     );
   }
 
 }
 
-export default HomePage;
+export default Main;

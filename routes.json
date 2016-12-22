@@ -1,8 +1,12 @@
 [
   {
     "path": "/",
-    "page": "./pages/home",
+    "page": "./pages/index",
     "chunk": "main"
+  },
+  {
+    "path": "/home",
+    "page": "./pages/home"
   },
   {
     "path": "/error",
