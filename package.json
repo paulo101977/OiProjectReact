@@ -94,16 +94,16 @@
     }
   },
   "scripts": {
-    "eslint": "eslint components core pages test utils main.js run.js webpack.config.js",
+    "eslint": "eslint components core pages test utils main.js start.js webpack.config.js",
     "stylelint": "stylelint \"components/**/*.css\" \"pages/**/*.css\"",
-    "lint": "npm run eslint && npm run stylelint",
+    "lint": "npm start eslint && npm start stylelint",
     "test": "mocha --compilers js:babel-register",
     "test:watch": "mocha --compilers js:babel-register --reporter min --watch",
-    "clean": "node run clean",
-    "build": "node run build",
-    "build:debug": "node run build --debug",
-    "publish": "node run publish",
-    "publish:debug": "node run publish --debug",
-    "start": "node run"
+    "clean": "node start clean",
+    "build": "node start build",
+    "build:debug": "node start build --debug",
+    "publish": "node start publish",
+    "publish:debug": "node start publish --debug",
+    "start": "node start"
   }
 }
